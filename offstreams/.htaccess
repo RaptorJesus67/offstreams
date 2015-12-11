@@ -1,0 +1,13 @@
+Options -Indexes
+
+ErrorDocument 403 /index.php
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+
+RewriteRule ^(.*)$ /offstreams/index.php [QSA]
+
