@@ -1,1 +1,0 @@
-<h2>Discover New Songs</h2>

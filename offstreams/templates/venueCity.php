@@ -1,1 +1,0 @@
-<h2><?php echo $this->url[2]; ?></h2>

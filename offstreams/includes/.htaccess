@@ -1,8 +1,0 @@
-Order deny,allow
-
-<Files ~ "\.php$">
-	Deny from all
-</Files>
-
-# IF ACCESS IS DESIRED FOR HEADER OR FOOTER, REDIRECT TO HOMEPAGE
-ErrorDocument 403 /offstreams/index.php

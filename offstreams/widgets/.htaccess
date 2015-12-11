@@ -1,3 +1,0 @@
-#deny from all
-
-ErrorDocument 403 /offstreams/index.php
