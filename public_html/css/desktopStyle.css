@@ -518,6 +518,7 @@ nav > ul > li:active {
     margin-bottom: 10px;
     height:200px;
     border: 1px solid #ccc;
+    max-width: 970px;
 }
 
 .bandPageInfoBottom > * {

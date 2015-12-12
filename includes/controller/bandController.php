@@ -216,7 +216,8 @@
 								   "name"			=> $band_name,
 								   "city"			=> $band["band_city"][0],
 								   "state"			=> $band["band_state"][0],
-								   "country"		=> $band["band_country"][0]
+								   "country"		=> $band["band_country"][0],
+								   "formed"			=> $band["band_formed"][0]
 								 );
 					
 			

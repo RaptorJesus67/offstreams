@@ -284,8 +284,26 @@
 		}).success(function(data) {
 			
 			$scope.bands = data;
+			console.log($scope.bands);
 			
 		});
+		
+		
+		// BAND DATE OF FORMATION
+		$scope.bandDate = function() {
+			
+			if ($scope.bands.formed == "0000-00-00") {
+			
+				return "N/A";
+				
+			} else {
+				
+				return $scope.bands.formed;
+				
+			}
+			
+		}
+		
 		
 		// LOAD BAND LOCATION
 		$scope.location = function() {

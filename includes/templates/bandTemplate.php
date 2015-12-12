@@ -42,6 +42,33 @@
 						</div>
 					</div>
 					
+					<div class='bandInfoLeftTblRow' id='bandRowLocation'>
+						<div id='bandFormationTag'>
+							Formed:
+						</div>
+						<div id="bandFormationValue">
+							{{bandDate() | date : 'MMM d, y'}}
+						</div>
+					</div>
+					
+					<div class='bandInfoLeftTblRow' id='bandRowLocation'>
+						<div id='bandWebsiteTag'>
+							Website:
+						</div>
+						<div id="bandWebsiteValue">
+							
+						</div>
+					</div>
+					
+					<div class='bandInfoLeftTblRow' id='bandRowLocation'>
+						<div id='bandEmailTag'>
+							Email:
+						</div>
+						<div id="bandEmailValue">
+							
+						</div>
+					</div>
+					
 				</div>
 				
 			</div>
