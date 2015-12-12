@@ -78,6 +78,18 @@
 			<!-- BAND DONATION/PURCHASE -->
 			<div class='bandInfoRight'>
 				
+				<div class='bandInfoDonate'>
+					<h3>Donate</h3>
+				</div>
+				
+				<div class='bandInfoMerch'>
+					<h3>Merchandise</h3>
+				</div>
+				
+				<div class='bandInfoMusicPurchase'>
+					<h3>Purchase Music</h3>
+				</div>
+				
 			</div>
 			
 		</div>
