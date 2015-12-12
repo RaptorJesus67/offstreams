@@ -47,7 +47,7 @@
 							Formed:
 						</div>
 						<div id="bandFormationValue">
-							{{bandDate() | date : 'MMM d, y'}}
+							{{band.formed | date:'mediumDate'}}
 						</div>
 					</div>
 					
@@ -56,7 +56,9 @@
 							Website:
 						</div>
 						<div id="bandWebsiteValue">
-							
+							<a href='{{band.website}}' target="_blank">
+								{{band.website}}
+							</a>
 						</div>
 					</div>
 					
@@ -65,7 +67,7 @@
 							Email:
 						</div>
 						<div id="bandEmailValue">
-							
+							{{band.email}}
 						</div>
 					</div>
 					

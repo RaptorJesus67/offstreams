@@ -28,7 +28,8 @@
 			
 			$name = "bands";
 			$cols = array("band_id", "band_name", "band_image", "band_city",
-						  "band_state", "band_country", "band_formed");
+						  "band_state", "band_country", "band_formed", "band_website",
+						  "band_email");
 			
 			// TYPE FOR THE INFO
 			if ($type == "single") {
