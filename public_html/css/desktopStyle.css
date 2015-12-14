@@ -775,6 +775,29 @@ nav > ul > li:active {
 	text-align: right;
 }
 
+.bandInfoRight h3 {
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.bandInfoRightTop, .bandInfoRightBottom {
+	height: 50%;
+	margin: 0 auto;
+	display: block;
+}
+
+.bandInfoDonate, .bandInfoMerch {
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+
+.bandInfoPurchMusic {
+	width: 100%;
+	float: left;
+	height: 100%;
+}
 
 
 
