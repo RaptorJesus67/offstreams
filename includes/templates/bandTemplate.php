@@ -47,7 +47,7 @@
 							Formed:
 						</div>
 						<div id="bandFormationValue">
-							{{band.formed | date:'mediumDate'}}
+							{{bandDate() | date : 'MMM d, y'}}
 						</div>
 					</div>
 					
@@ -77,7 +77,20 @@
 			
 			<!-- BAND DONATION/PURCHASE -->
 			<div class='bandInfoRight'>
-				
+				<div class='bandInfoRightTop'>
+					<div class='bandInfoDonate'>
+						<h3>Donate</h3>
+					</div>
+					<div class='bandInfoMerch'>
+						<h3>Merchandise</h3>
+						<img src='<?php echo BASE_URI;?>images/Merch Unclicked.png' class='merchButtonUnclicked' />
+					</div>
+				</div>
+				<div class='bandInfoRightBottom'>
+					<div class='bandInfoPurchMusic'>
+						<h3>Donate</h3>
+					</div>
+				</div>
 			</div>
 			
 		</div>

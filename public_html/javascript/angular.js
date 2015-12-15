@@ -89,17 +89,6 @@
 		}
 		return true;
 	}
-	
-	
-	
-	// FORMAT DATE
-	function formatDate(date, regex) {
-		
-		var dates = date.split("-");
-		
-		console.log(dates);
-		
-	}
 
 	
 	
@@ -303,9 +292,15 @@
 		// BAND DATE OF FORMATION
 		$scope.bandDate = function() {
 			
-			var formed = $scope.bands[0].formed;
-			
-			console.log(formatDate(formed, "y"));
+			if ($scope.bands.formed == "0000-00-00") {
+				
+				return "N/A";
+				
+			} else {
+				
+				return $scope.bands.formed;
+				
+			}
 			
 		}
 		
