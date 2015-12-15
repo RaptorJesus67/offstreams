@@ -83,6 +83,7 @@
 					</div>
 					<div class='bandInfoMerch'>
 						<h3>Merchandise</h3>
+						<img src='<?php echo BASE_URI;?>images/Merch Unclicked.png' class='merchButtonUnclicked' />
 					</div>
 				</div>
 				<div class='bandInfoRightBottom'>
