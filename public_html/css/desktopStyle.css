@@ -799,6 +799,27 @@ nav > ul > li:active {
 	height: 100%;
 }
 
+.merchButtonUnclicked {
+	height: 50px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 10px;
+}
+
+.purchaseImageWrapper {
+	width: 33%;
+	margin: 0 auto;
+	float: left;
+}
+
+.purchaseMusicImage {
+	height: 50px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 5px;
+}
+
+
 
 
 
