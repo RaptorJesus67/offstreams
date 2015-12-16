@@ -80,6 +80,7 @@
 				<div class='bandInfoRightTop'>
 					<div class='bandInfoDonate'>
 						<h3>Donate</h3>
+						<h4 style="text-align: center;">N/A</h4>
 					</div>
 					<div class='bandInfoMerch'>
 						<h3>Merchandise</h3>
@@ -88,7 +89,10 @@
 				</div>
 				<div class='bandInfoRightBottom'>
 					<div class='bandInfoPurchMusic'>
-						<h3>Donate</h3>
+						<h3>Purchase Music</h3>
+						<div class='purchaseImageWrapper' ng-repeat="img in images">
+							<img src="<?php echo BASE_URI; ?>images/{{img.src}}" class='purchaseMusicImage' />
+						</div>
 					</div>
 				</div>
 			</div>

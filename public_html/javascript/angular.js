@@ -329,6 +329,9 @@
 		};
 		
 		
+		// IMAGES FOR PURCHASING
+		$scope.images = [{src: "amazon.png"}, {src: "googlePlay.png"}, {src: "itunes.png"}];
+		console.log($scope.images);
 		
 		
 		///////////////////////////
