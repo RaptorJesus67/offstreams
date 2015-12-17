@@ -5,6 +5,8 @@
 		public $table;
 		private $data;
 		private $query;
+		private $clean;
+		private $conn;
 		
 		public function __construct() {
 			
@@ -33,12 +35,12 @@
 		*
 		*	Used in Sub-Model's methods to pull out of database
 		*
-		*	@access			protected			[used in sub-model's]
+		*	@access				protected				[used in sub-model's]
 		*	@param				string					["$tableName", name of the table]
 		*	@param				array					["$columns", columns to be selected]
-		*	^@param			string					["$where", mysql parameters to be set]
-		*	^@param			int						["$limit", integer of amount to be pulled from db]
-		*	@return				boolean				[return true if table has values]
+		*	^@param				string					["$where", mysql parameters to be set]
+		*	^@param				int						["$limit", integer of amount to be pulled from db]
+		*	@return				boolean					[return true if table has values]
 		*
 		*/
 		public function select($tableName, $columns, $where = null, $limit = null, $order = array(), $explain = FALSE) {
@@ -75,6 +77,7 @@
 				
 			}
 			
+			// Check Order
 			if (!empty($order)) {
 				
 				$ord = " ORDER BY " . $order[0] . " " . $order[1];
@@ -93,8 +96,11 @@
 			
 			$query = $this->conn->query($sql) or die ($this->conn->error);
 			
-			// Store the value in a variable called table with an array of that table's name followed by it's values
-			// EX: $model->table["bands"]["band_name"]
+			
+			// Store the value in a variable called table with an array of that 
+			// table's name followed by it's values and iteration
+			//
+			// EX: $model->table["bands"]["band_name"][$i]
 			//
 			// Accessible by the individual page/directory's controller's
 			

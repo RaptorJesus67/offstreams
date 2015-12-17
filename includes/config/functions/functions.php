@@ -8,7 +8,6 @@
 	require_once(BASEPATH . "includes/config/functions/camelCaseSplit.php");
 	require_once(BASEPATH . "includes/config/functions/imageCentering.php");
 	require_once(BASEPATH . "includes/config/functions/simpleHTMLDOM.php");
-	require_once(BASEPATH . "includes/config/functions/stockQuoterAPI.php");
 	require_once(BASEPATH . "includes/config/purifier/HTMLPurifier.auto.php");
 
 ?>

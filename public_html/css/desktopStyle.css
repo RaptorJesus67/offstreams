@@ -7,6 +7,7 @@
 /*					3.) LOGIN/REG						*/
 /*					4.) USER PAGE						*/
 /*					5.) BAND PAGE						*/
+/*					6.) REGISTER PAGE					*/
 /*														*/
 /*      										  		*/
 /********************************************************/
@@ -161,6 +162,21 @@ ul {
 .ng-row-4 > * {
 	margin: 0 auto;
 	display: block;
+}
+
+.cleanMessage, .errorMessage {
+	font-family: PT Sans Bold;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.cleanMessage {
+	color: #008000;
+}
+
+.errorMessage {
+	color: #bb0000;
 }
 
 
@@ -821,7 +837,55 @@ nav > ul > li:active {
 
 
 
+/***************************/
+/*		6.) REGISTER PAGE  */
+/***************************/
 
+.registerWrap {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 100px;
+}
+
+.registerWrap > h3 {
+	text-align: center;
+}
+
+.regContainer {
+	padding: 5px;
+}
+
+.registerWrap .inputBox {
+	width: 250px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 10px;
+}
+
+.captchaWrapper {
+	margin: 0 auto;
+	display: block;
+	width: 300px;
+}
+
+.registerWrap .inputBox:nth-child(4) {
+	margin-bottom: 10px;
+}
+
+#regUser {
+	margin: 0 auto;
+	display: block;
+	margin-top: 20px;
+}
+
+.registerMessages {
+	position: absolute;
+	height: 170px;
+	width: 250px;
+	right: 0;
+	top: 55px;
+}
 
 
 

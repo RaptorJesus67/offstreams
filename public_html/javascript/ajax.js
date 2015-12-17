@@ -35,6 +35,49 @@ $(document).ready(function(){
 	
 	
 	
+	////////////////////////////////////
+	//	USERNAME BINDING
+	//
+	//
+	$("#username").bind("change paste keyup", function() {
+		
+		
+		$.ajax({
+			
+			url: base_uri + "register",
+			method: 'POST',
+			data: {username: $("#username").val()},
+			success: function(value) {
+				
+				// Remove each bind
+				$("#usernameMessage > p").text("");
+				$("#usernameMessage > p").attr("class", "");
+				
+				console.log(value);
+				
+				// If it returns value
+				if (value != null || value != "null") {
+					
+					var t = jQuery.parseJSON(value);
+					$("#usernameMessage > p").text(t.text);
+					$("#usernameMessage > p").addClass(t.class);
+					
+				}
+				
+			}
+			
+		});
+		
+	});
+	
+	
+	
+	
+	///////////////////////////////////
+	// REGISTRATION FORM SUBMITTED
+	//
+	//
+	//
 	$("#registerForm").on("submit", function(e) {
 		
 		e.preventDefault();
