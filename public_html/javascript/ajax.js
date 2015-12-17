@@ -24,11 +24,41 @@ $(document).ready(function(){
 			data: {update: formValues},
 			success: function(value){
 			
-				console.log(value);
+				
 				
 			}
 			
 		});
+		
+	});
+	
+	
+	
+	
+	$("#registerForm").on("submit", function(e) {
+		
+		e.preventDefault();
+		
+		var formValues = {
+							"username":		$("#username").val(),
+							"email":		$("#email").val(),
+							"password":		$("#password").val(),
+							"confirm":		$("#confirm").val()
+						};
+						
+						
+		$.ajax({
+			
+			url: $("#registerForm").attr("action"),
+			method: 'POST',
+			data: {regData: formValues},
+			success: function(data) {
+			
+				console.log(data);
+				
+			}
+			
+		});	
 		
 	});
 	
