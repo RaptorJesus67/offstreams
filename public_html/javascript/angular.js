@@ -97,6 +97,21 @@
 	
 	
 	
+	//////////////////////////////////////
+	////		MAIN INDEX FOR		  ////
+	////    	 	ANGULAR 	  	  ////
+	////							  ////
+	////	1. Navigation			  ////
+	////	2. Band Home Page		  ////
+	////	3. User Profile Page	  ////
+	////	4. Band Page			  ////
+	////	5. Register Page		  ////
+	////							  ////
+	//////////////////////////////////////
+	////	GOTO: Use the listings	  ////
+	////	above to navigate page	  ////
+	//////////////////////////////////////
+	
 	
 	
 	
@@ -109,6 +124,7 @@
 	
 	var base_uri = "http://localhost/";
 	
+	
 	// OFFSTREAMS INTIATION
 	var app = angular.module('ostrApp', []);
 	
@@ -116,7 +132,13 @@
 	
 	
 	
-	// NAVIGATION CONTROLLER
+	////////////////////////////////////////
+	//	1. Navigation
+	//
+	// 	THE CONTROLLER FOR THE NAVIGATION
+	//
+	//
+	//
 	app.controller('Navigation', ['$http', '$scope', function($http, $scope) {
 		
 		
@@ -144,7 +166,13 @@
 	
 	
 	
-	// BAND HOMEPAGE
+	////////////////////////////////////////
+	//	2. Band Home Page 
+	//
+	// 	THE CONTROLLER FOR THE BAND HOME PAGE
+	//
+	//
+	//
 	app.controller('bandHomePage', ['$http', '$scope', function($http, $scope) {
 		
 		$http({
@@ -171,7 +199,13 @@
 	
 	
 	
-	// USER EDITING PAGE
+	////////////////////////////////////////
+	//	3. User Profile Page 
+	//
+	// 	THE CONTROLLER FOR THE USER'S PAGE
+	//
+	//
+	//
 	app.controller('userProfile', ['$http', '$scope', function($http, $scope) {
 		
 		var locArray;
@@ -254,20 +288,21 @@
 	
 	
 	////////////////////////////////////////
-	// THE CONTROLLER FOR THE BAND PAGE
+	//	4. Band Page 
+	//
+	// 	THE CONTROLLER FOR THE BAND PAGE
 	//
 	//
 	//
 	app.controller('bandPage', ['$http', '$scope', function($http, $scope) {
 		
+		////////////////////////////////////
 		// Initiate the widget as albums
 		$scope.widget = "Albums";
 		$scope.Albums = false;
 		$scope.Singles = false;
 		$scope.Videos = false;
 		$scope.bandId = $(".bandIdHidden").val();
-		
-		
 		
 		
 		///////////////////////////
@@ -289,6 +324,7 @@
 		});
 		
 		
+		///////////////////////////////
 		// BAND DATE OF FORMATION
 		$scope.bandDate = function() {
 			
@@ -305,6 +341,7 @@
 		}
 		
 		
+		///////////////////////////
 		// LOAD BAND LOCATION
 		$scope.location = function() {
 			
@@ -329,6 +366,7 @@
 		};
 		
 		
+		////////////////////////////
 		// IMAGES FOR PURCHASING
 		$scope.images = [{src: "amazon.png"}, {src: "googlePlay.png"}, {src: "itunes.png"}];
 		console.log($scope.images);
@@ -351,6 +389,7 @@
 			console.log(data);
 			
 			
+			/////////////////////////
 			// NUMBER OF ALBUMS
 			$scope.albumNumber = data.length;
 			console.log($scope.albumNumber);
@@ -395,6 +434,7 @@
 		}
 		
 		
+		///////////////////////////////////
 		// CHANGE STYLING FOR ALBUM TYPE
 		$scope.albumType = function(type) {
 			
@@ -417,6 +457,7 @@
 		}
 		
 		
+		///////////////////////
 		// ALBUM IMAGE
 		$scope.albumImage = function(image) {
 		
@@ -428,6 +469,25 @@
 		
 	}]);
 	
+	
+	
+	
+	
+	
+	////////////////////////////////////////
+	//	 5. Register Page
+	//
+	//	THE CONTROLLER FOR THE REGISTRATION
+	//
+	//
+	//
+	app.controller('regPage', ['$http', '$scope', function($http, $scope) {
+		
+		
+		
+		
+		
+	}]);
 	
 	
 	
